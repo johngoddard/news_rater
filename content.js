@@ -7,10 +7,10 @@ setInterval(() => {
     let currLink = links[i];
 
     if (currLink.getAttribute("onmouseover")) {
-      console.log('mouse');
       console.log(currLink.getAttribute("onmouseover"));
       console.log(currLink);
+      currLink.style.backgroundColor = 'red';
     }
   }
 
-}, 9000);
+}, 500);
