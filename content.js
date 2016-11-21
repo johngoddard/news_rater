@@ -1,26 +1,16 @@
 
-// setInterval(() => {
-//   const links = document.querySelectorAll('a');
-//
-//   for (let i = 0; i < links.length; i++) {
-//     let currLink = links[i];
-//     console.log(currLink.href);
-//     console.log(/https:\/\/facebook.com/.test(currLink.href));
-//
-//     if(!(/facebook.com/.test(currLink.href))) {
-//       links[i].style.backgroundColor = 'red';
-//     }
-//   }
-// }, 500);
-
+setInterval(() => {
   const links = document.querySelectorAll('a');
+  const weirdStuff = document.getElementsByClassName('_52c6');
 
   for (let i = 0; i < links.length; i++) {
     let currLink = links[i];
 
-    if(currLink.onmouseover) {
+    if (currLink.getAttribute("onmouseover")) {
+      console.log('mouse');
+      console.log(currLink.getAttribute("onmouseover"));
       console.log(currLink);
-
-      console.log("MOUSE OVER!");
     }
   }
+
+}, 9000);
